@@ -1,0 +1,995 @@
+Started GET "/" for ::1 at 2016-05-19 11:11:37 +0300
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.rc1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.rc1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.rc1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.rc1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.rc1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.rc1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.rc1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.rc1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc1) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (100.9ms)
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20160519081038)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "image_url" varchar, "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160519081038"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" ORDER BY "ar_internal_metadata"."key" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-05-19 08:34:04 UTC], ["updated_at", 2016-05-19 08:34:04 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2016-05-19 11:36:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2016-05-19 11:36:20 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 408ms (Views: 404.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 11:36:20 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 11:36:20 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 11:36:20 +0300
+Started GET "/products/new" for ::1 at 2016-05-19 11:36:27 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (12.7ms)
+  Rendered products/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 36ms (Views: 28.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2016-05-19 11:42:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (15.3ms)
+  Rendered products/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 232ms (Views: 214.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2016-05-19 11:46:51 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (0.7ms)
+  Rendered products/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Kime/work/depot/app/views/products/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+....text_area :description, :rows: 6 );@output_buffer.safe_appe...
+...                               ^):
+  
+app/views/products/_form.html.erb:21: syntax error, unexpected ':', expecting ')'
+app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb___358748374814709496_70171590825140'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.9ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (79.1ms)
+Started GET "/products/new" for ::1 at 2016-05-19 11:47:17 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.7ms)
+  Rendered products/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 11:47:17 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 11:47:18 +0300
+Started GET "/products/new" for ::1 at 2016-05-19 11:47:33 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.0ms)
+  Rendered products/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 11:47:33 +0300
+Started POST "/products" for ::1 at 2016-05-19 11:52:27 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BIZZvy0Qhk3rCHaEWwHyt0rOPQkzYH8bEme4ABRW2VD+YeAST3LLjXIndKRSp9+rXt+xZOTMpYUk/st4zFdwgQ==", "product"=>{"title"=>"", "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "image_url"=>"cs.jpg", "price"=>"36.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", ""], ["description", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["image_url", "cs.jpg"], ["price", #<BigDecimal:7fa43171b2e0,'0.36E2',9(18)>], ["created_at", 2016-05-19 08:52:27 UTC], ["updated_at", 2016-05-19 08:52:27 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/products/1" for ::1 at 2016-05-19 11:52:27 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2016-05-19 11:52:33 +0300
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/products/1" for ::1 at 2016-05-19 11:52:58 +0300
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X5UKEMUr2f4xrQ0jYvEO3TjyWvSFUfRUFA1iy6cn1prM/hEtM3zpOv4hvHZl6dbP4+Uo0O5rXXnS4PcK/AIpJQ==", "product"=>{"title"=>"CoffeeScript", "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "image_url"=>"cs.jpg", "price"=>"36.0"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "products" SET "title" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["title", "CoffeeScript"], ["updated_at", 2016-05-19 08:52:58 UTC], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/products/1" for ::1 at 2016-05-19 11:52:58 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2016-05-19 11:53:01 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 11:53:01 +0300
+Started GET "/products/1/edit" for ::1 at 2016-05-19 11:54:58 +0300
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.1ms)
+  Rendered products/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/1" for ::1 at 2016-05-19 11:55:12 +0300
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pXhk+qx/O8PNwz7Mi2Ikp/MaHGzVoMBRdWOtMT3267c2E3/HWigLBwJPj5mMevy1KA1uSL6aaXyzjjjwZtMUCA==", "product"=>{"title"=>"CoffeeScript", "description"=>"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>", "image_url"=>"cs.jpg", "price"=>"36.0"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "products" SET "description" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["description", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"], ["updated_at", 2016-05-19 08:55:12 UTC], ["id", 1]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/products/1" for ::1 at 2016-05-19 11:55:12 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/" for ::1 at 2016-05-19 11:55:37 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[31mDELETE FROM "products"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "CoffeeScript"], ["description", "<p>\n        CoffeeScript is JavaScript done right. It provides all of JavaScript's\n\tfunctionality wrapped in a cleaner, more succinct syntax. In the first\n\tbook on this exciting new language, CoffeeScript guru Trevor Burnham\n\tshows you how to hold onto all the power and flexibility of JavaScript\n\twhile writing clearer, cleaner, and safer code.\n      </p>"], ["image_url", "cs.jpg"], ["price", #<BigDecimal:7fafad551310,'0.36E2',9(18)>], ["created_at", 2016-05-19 09:47:57 UTC], ["updated_at", 2016-05-19 09:47:57 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Programming Ruby 1.9 & 2.0"], ["description", "<p>\n        Ruby is the fastest growing and most exciting dynamic language\n        out there. If you need to get working programs delivered fast,\n        you should add Ruby to your toolbox.\n      </p>"], ["image_url", "ruby.jpg"], ["price", #<BigDecimal:7fafad5a2030,'0.4995E2',18(27)>], ["created_at", 2016-05-19 09:47:57 UTC], ["updated_at", 2016-05-19 09:47:57 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Rails Test Prescriptions"], ["description", "<p>\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\n        Rails applications, covering Test-Driven Development from both a\n        theoretical perspective (why to test) and from a practical perspective\n        (how to test effectively). It covers the core Rails testing tools and\n        procedures for Rails 2 and Rails 3, and introduces popular add-ons,\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\n      </p>"], ["image_url", "rtp.jpg"], ["price", #<BigDecimal:7fafad5c2f10,'0.3495E2',18(27)>], ["created_at", 2016-05-19 09:47:57 UTC], ["updated_at", 2016-05-19 09:47:57 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products/" for ::1 at 2016-05-19 12:48:11 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 12:48:11 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 12:48:12 +0300
+Started GET "/products/" for ::1 at 2016-05-19 12:54:51 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 12:54:51 +0300
+Started GET "/products/" for ::1 at 2016-05-19 12:57:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 270ms (Views: 260.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 12:57:26 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 12:57:27 +0300
+Started GET "/products/" for ::1 at 2016-05-19 13:03:35 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 13:03:35 +0300
+Started GET "/products/" for ::1 at 2016-05-19 13:16:26 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-19 13:16:26 +0300
+Started GET "/products/4" for ::1 at 2016-05-19 13:16:40 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/3" for ::1 at 2016-05-19 13:16:43 +0300
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/3/edit" for ::1 at 2016-05-19 13:16:56 +0300
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (13.9ms)
+  Rendered products/edit.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for ::1 at 2016-05-20 12:08:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (209.1ms)
+Completed 200 OK in 257ms (Views: 244.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-20 12:08:22 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-20 12:08:22 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-20 12:08:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20160519081038)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160519081038"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/products" for ::1 at 2016-05-20 12:15:09 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such table: products: SELECT "products".* FROM "products"):
+    1: <h1>Listing products</h1>
+    2: 
+    3: <table>
+    4: <% @products.each do |product| %>
+    5:   <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    6: 
+    7:     <td>
+  
+app/views/products/index.html.erb:4:in `_app_views_products_index_html_erb__953315000712939114_70337271090860'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (105.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20160519081038)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "image_url" varchar, "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160519081038"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" ORDER BY "ar_internal_metadata"."key" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/products" for ::1 at 2016-05-20 12:16:18 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-20 12:16:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "products"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "CoffeeScript"], ["description", "<p>\n        CoffeeScript is JavaScript done right. It provides all of JavaScript's\n\tfunctionality wrapped in a cleaner, more succinct syntax. In the first\n\tbook on this exciting new language, CoffeeScript guru Trevor Burnham\n\tshows you how to hold onto all the power and flexibility of JavaScript\n\twhile writing clearer, cleaner, and safer code.\n      </p>"], ["image_url", "cs.jpg"], ["price", #<BigDecimal:7f93188c1ce0,'0.36E2',9(18)>], ["created_at", 2016-05-20 09:16:34 UTC], ["updated_at", 2016-05-20 09:16:34 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Programming Ruby 1.9 & 2.0"], ["description", "<p>\n        Ruby is the fastest growing and most exciting dynamic language\n        out there. If you need to get working programs delivered fast,\n        you should add Ruby to your toolbox.\n      </p>"], ["image_url", "ruby.jpg"], ["price", #<BigDecimal:7f9318921280,'0.4995E2',18(27)>], ["created_at", 2016-05-20 09:16:34 UTC], ["updated_at", 2016-05-20 09:16:34 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Rails Test Prescriptions"], ["description", "<p>\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\n        Rails applications, covering Test-Driven Development from both a\n        theoretical perspective (why to test) and from a practical perspective\n        (how to test effectively). It covers the core Rails testing tools and\n        procedures for Rails 2 and Rails 3, and introduces popular add-ons,\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\n      </p>"], ["image_url", "rtp.jpg"], ["price", #<BigDecimal:7f9318951868,'0.3495E2',18(27)>], ["created_at", 2016-05-20 09:16:34 UTC], ["updated_at", 2016-05-20 09:16:34 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for ::1 at 2016-05-20 12:16:37 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 12:16:38 +0300
+Started GET "/products" for ::1 at 2016-05-20 12:33:57 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-20 12:33:57 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-20 12:33:58 +0300
+Started GET "/products/new" for ::1 at 2016-05-20 12:33:58 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (13.0ms)
+  Rendered products/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:34:01 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2dkfoxn1yk59vPyDkoyxKyHOqddInegADVf6F9iDeVNISnqzkp7AwMtMTIpXXkoTYNeFdGhFmQYziLx5GybWUA==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:47:22 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+KLw2ML2CT7WoVesLY5RjSoYnO6WEeior7SLV5ykNDv8JmP3/E47ExB1HLWP0/dF9RBRNzVcD8hhoK3lCh0rg==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 33ms (Views: 22.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:47:27 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NJFffurH1R8tK5NZBaxLYV7CjqpGofG+V5EwtGmUFRWcg00yVj0115owwnVjJT36fb6tnSAsxiPUqWAuo87xaw==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>"вава"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.0ms)
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:47:45 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BoQTPFSuzpl27fYT9a/JLJMWExkuBHUMQv0uVn3eK3OulgFw6FQuUcH2pz+TJr+3sGowLkiJQpHBxX7Mt4TPDQ==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>"0"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.2ms)
+  Rendered products/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:47:55 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmyhOMcLARvp3HHhpUJQdnQnBTFP97p6dVe6FfV8qY0OfrN0e/Hh017HIM3DyybtV1smBil6jef2b+qPPyZN8w==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.2ms)
+  Rendered products/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products" for ::1 at 2016-05-20 12:48:01 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EgmqRVYaPkESkFynD2FOvSTh1XYPisR/R2KZe8R4nli6G7gJ6uDeiaWLDYtp6DgmB532QWkH8+LEWsnhDiJ6Jg==", "product"=>{"title"=>"Twst", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/" for ::1 at 2016-05-23 10:34:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (202.5ms)
+Completed 200 OK in 248ms (Views: 237.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/new" for ::1 at 2016-05-23 10:34:18 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (13.9ms)
+  Rendered products/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2016-05-23 10:34:20 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"omUEJ+LZR5SVc9+99NiVXsQUw3a+MYZCL/PL4QpVBgRgrU2CuxbgcOatVSil979iOzAgNlg83334fldmGBcUmA==", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.3ms)
+  Rendered products/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/" for ::1 at 2016-05-23 10:58:07 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for ::1 at 2016-05-23 10:58:17 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ExOfIVhbBoXYzrS5WcWv7WuM/4jUleexCrF4xAY1UNsayqLSzZDILAjX6MBinE8ryOWZgkUH+44T/mY9VM4aVQ==", "product"=>{"title"=>"CoffeeScript", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products" for ::1 at 2016-05-23 10:58:31 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a8J+bDadGJbjKqPfFTmfDsVK3RpYfdxBCeWe2mJ3vzxiG0Ofo1bWPzMz/6YuYH/IZiO7EMnvwH4QqoAjMIz1sg==", "product"=>{"title"=>"CoffeeScript", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "CoffeeScript"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.8ms)
+  Rendered products/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 73ms (Views: 29.1ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/products" for ::1 at 2016-05-26 11:16:49 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+
+  
+NameError (undefined local variable or method `a_method_used_for_validation_purposes' for #<Class:0x007fd960a530e8>):
+  
+app/models/product.rb:7:in `<class:Product>'
+app/models/product.rb:1:in `<top (required)>'
+app/controllers/products_controller.rb:7:in `index'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (113.3ms)
+Started GET "/products" for ::1 at 2016-05-26 11:18:41 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (173.8ms)
+Completed 200 OK in 213ms (Views: 207.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-26 11:18:42 +0300
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-26 11:18:42 +0300
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "GG"], ["description", "hahaha"], ["image_url", "zzz.jpg"], ["price", #<BigDecimal:7f89bc012500,'0.22E2',9(18)>], ["created_at", 2016-05-26 08:54:43 UTC], ["updated_at", 2016-05-26 08:54:43 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for ::1 at 2016-05-26 11:55:11 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-26 11:55:11 +0300
+Started GET "/images/zzz.jpg" for ::1 at 2016-05-26 11:55:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/zzz.jpg"):
+  
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.rc1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.rc1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.rc1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc1) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (2.0ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (33.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.5ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-26 11:55:11 +0300
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (86.0ms)
+Started DELETE "/products/4" for ::1 at 2016-05-26 11:55:15 +0300
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HHUCZ30rAmgdW8lzMkjX/O6wK1Bs0k0IwkOWIyZAiXEkbDaV0vXXlc07BrcsU8DSFiomC5+nz/lS/d/8t7epng==", "id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for ::1 at 2016-05-26 11:55:15 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "GG"], ["description", "hahaha"], ["image_url", "zzz.jpg"], ["created_at", 2016-05-26 08:59:36 UTC], ["updated_at", 2016-05-26 08:59:36 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/products" for ::1 at 2016-05-26 11:59:42 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.self-8f6682defa88cb1919aeab00d42e98d4559f1c9eabc99ddf083e7312ff53e1bf.css?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/scaffolds.self-e2aae5a6d045192e5ac54433d95f0a11b736d101d6e04dea37cefddf2f6f720a.css?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/cs-f56ef62bc41b040664e801a38f068082a75d506d9048307e8096737463503d0b.jpg" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/ruby-836fee16e3757bcd4e2c21d064eee4fa81d7f93e4e9a44b1ffcd6c1d41c92a88.jpg" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/assets/rtp-d3d2240713cce773840785de837acf822d235d1b77040a3e1ed9d8c014cff086.jpg" for ::1 at 2016-05-26 11:59:42 +0300
+Started GET "/images/zzz.jpg" for ::1 at 2016-05-26 11:59:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/zzz.jpg"):
+  
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.rc1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.rc1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.0.rc1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.0.rc1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.rc1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.0.rc1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.rc1) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (2.8ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+Started GET "/assets/turbolinks.self-979a09514ef27c84df025c07108a05438ba97cfec71073dcb800a4d327044e02.js?body=1" for ::1 at 2016-05-26 11:59:42 +0300
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendering /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Kime/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (86.8ms)
+Started DELETE "/products/5" for ::1 at 2016-05-26 11:59:44 +0300
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YGIaHF9DzuDNcKr54S4cipwKR/NuqEZF3lnZwL2E03tYey7u8J0bHR0QZT3/NQukZJBKqJ3dxLRO55AfLHPzlA==", "id"=>"5"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 5ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/products" for ::1 at 2016-05-26 11:59:44 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GGss"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GGss"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GGss"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GGss"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" = ? LIMIT ?[0m  [["title", "GGss"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
